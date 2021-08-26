@@ -42,29 +42,7 @@ while True:
         if event.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
-        '''
-        if dino_state == "run":
-            if event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_SPACE:
-                    dino_y_change = -1
-        if dino_state == "jump":
-            if event.type == pygame.KEYUP:
-                if event.key == pygame.K_SPACE:
-                    dino_y_change = 1
-
-    dino_rect.rect.y += dino_y_change
-    if dino_rect.rect.y > 250:
-        dino_state = "run"
-        dino_rect.rect.y = 250
-    if dino_rect.rect.y < 100:
-        dino_state = "jump"
-        dino_rect.rect.y = 100
-        dino_y_change = 1
-    
-    cactus_rect.rect.x = cactus_rect.rect.x - 1
-    if cactus_rect.rect.x <= -30:
-        cactus_rect.rect.x = 1200
-    '''
+        
     dino_rect.paste_image(dino)
     cactus_rect.paste_image(cacti)
     
